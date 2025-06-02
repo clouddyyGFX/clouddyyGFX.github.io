@@ -4,58 +4,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Clouddyy | GFX Designer</title>
+  <title>Clouddyy | Galaxy GFX Portfolio</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0a0a;
+      font-family: 'Orbitron', sans-serif;
       color: white;
-      background-image: radial-gradient(rgba(255, 0, 0, 0.03) 1px, transparent 1px);
-      background-size: 40px 40px;
+      background: url('https://images.unsplash.com/photo-1471658794273-6fd0e3e5c0c3?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      animation: stars 200s linear infinite;
+    }
+
+    @keyframes stars {
+      0% { background-position: 0 0; }
+      100% { background-position: -10000px 5000px; }
     }
 
     header {
-      background: linear-gradient(90deg, #aa0000, #ff4444);
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     header h1 {
       font-size: 3rem;
-      margin: 0;
-      background: linear-gradient(90deg, #ffffff, #ff9999);
+      background: linear-gradient(to right, #ff004c, #ff7d7d);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      margin: 0;
     }
 
-    nav {
+    .intro {
       text-align: center;
+      font-size: 1.2rem;
       margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      color: #ff6666;
-      text-decoration: none;
-      font-weight: bold;
+      color: #eee;
     }
 
     .section {
-      padding: 3rem 2rem;
       text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     .section h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ff6666;
-    }
-
-    .about {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.1rem;
+      color: #ff4c4c;
     }
 
     .gallery {
@@ -63,61 +59,65 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      margin-top: 2rem;
+      padding: 2rem 1rem;
     }
 
     .gallery img {
-      width: 300px;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.4s ease, box-shadow 0.4s;
       cursor: pointer;
     }
 
     .gallery img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 20px #ff0055;
     }
 
-    .pricing p {
+    .pricing {
       font-size: 1.3rem;
-      margin: 1rem 0;
+      color: #f5f5f5;
+      margin-bottom: 2rem;
+    }
+
+    .pricing span {
+      display: block;
+      margin: 0.5rem 0;
     }
 
     .contact-btn a {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #ff4444;
+      background-color: #ff004c;
+      padding: 14px 28px;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
-      margin-top: 1rem;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
+
+    .contact-btn a:hover {
+      background-color: #cc0033;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      color: #888;
-      border-top: 1px solid #222;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Clouddyy GFX Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">My Work</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>CLOUDDYY</h1>
+    <div class="intro">I'm Clouddyy, a graphic designer.</div>
   </header>
 
-  <section id="about" class="section about">
-    <h2>Who I Am</h2>
-    <p>I'm <strong>Clouddyy</strong>, a graphic designer with two years of experience. I create high-quality Roblox GFX in 2D, cartoony, anime, and 3D styles.</p>
-  </section>
-
-  <section id="work" class="section">
+  <section class="section">
     <h2>My Work</h2>
     <div class="gallery">
       <img src="assets/213.png" alt="GFX 1"/>
@@ -129,16 +129,14 @@
     </div>
   </section>
 
-  <section id="pricing" class="section pricing">
+  <section class="section">
     <h2>Pricing</h2>
-    <p><strong>Icons:</strong> $10</p>
-    <p><strong>Thumbnails:</strong> $15</p>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Let's Work Together</h2>
+    <div class="pricing">
+      <span><strong>Icons:</strong> $10</span>
+      <span><strong>Thumbnails:</strong> $15</span>
+    </div>
     <div class="contact-btn">
-      <a href="https://discord.com/users/clouddyyjojo" target="_blank">Contact Me on Discord</a>
+      <a href="https://discord.com/users/clouddyyjojo" target="_blank">Contact Me</a>
     </div>
   </section>
 
