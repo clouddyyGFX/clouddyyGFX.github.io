@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clouddyy | Galaxy GFX Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('assets/ai-generated-concept-of-web-banner-magic-color-galaxy-horizontal-space-background-with-realistic-nebula-stardust-and-shining-stars-infinite-universe-and-starry-night-sky-photo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: stars 200s linear infinite;
+    }
+
+    @keyframes stars {
+      0% { background-position: 0 0; }
+      100% { background-position: -10000px 5000px; }
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #ff004c, #ff7d7d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #eee;
+    }
+
+    .section {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #ff4c4c;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.4s ease, box-shadow 0.4s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff0055;
+    }
+
+    .pricing {
+      font-size: 1.3rem;
+      color: #f5f5f5;
+      margin-bottom: 2rem;
+    }
+
+    .pricing span {
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    .contact-btn a {
+      background-color: #ff004c;
+      padding: 14px 28px;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
+
+    .contact-btn a:hover {
+      background-color: #cc0033;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CLOUDDYY</h1>
+    <div class="intro">I'm Clouddyy, a graphic designer.</div>
+  </header>
+
+  <section class="section">
+    <h2>My Work</h2>
+    <div class="gallery">
+      <a href="assets/213.png" target="_blank"><img src="assets/213.png" alt="GFX 1"/></a>
+      <a href="assets/dabi_2.png" target="_blank"><img src="assets/dabi_2.png" alt="GFX 2"/></a>
+      <a href="assets/edit2.png" target="_blank"><img src="assets/edit2.png" alt="GFX 3"/></a>
+      <a href="assets/rengokuv4.png" target="_blank"><img src="assets/rengokuv4.png" alt="GFX 4"/></a>
+      <a href="assets/knight_gfx.png" target="_blank"><img src="assets/knight_gfx.png" alt="GFX 5"/></a>
+      <a href="assets/elemental_tycoon.png" target="_blank"><img src="assets/elemental_tycoon.png" alt="GFX 6"/></a>
+      <img src="assets/213.png" alt="GFX 1"/>
+      <img src="assets/dabi_2.png" alt="GFX 2"/>
+      <img src="assets/edit2.png" alt="GFX 3"/>
+      <img src="assets/rengokuv4.png" alt="GFX 4"/>
+      <img src="assets/knight_gfx.png" alt="GFX 5"/>
+      <img src="assets/elemental_tycoon.png" alt="GFX 6"/>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <span><strong>Icons:</strong> $10</span>
+      <span><strong>Thumbnails:</strong> $15</span>
+    </div>
+    <div class="contact-btn">
+      <a href="https://discord.com/users/clouddyyjojo" target="_blank">Contact Me</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Clouddyy. All rights reserved.
+  </footer>
+</body>
+</html>
