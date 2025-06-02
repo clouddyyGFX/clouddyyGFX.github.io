@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clouddyy | GFX Designer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      background-image: radial-gradient(rgba(255, 0, 0, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #aa0000, #ff4444);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      background: linear-gradient(90deg, #ffffff, #ff9999);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #ff6666;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff6666;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .pricing p {
+      font-size: 1.3rem;
+      margin: 1rem 0;
+    }
+
+    .contact-btn a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ff4444;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #888;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Clouddyy GFX Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">My Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>Who I Am</h2>
+    <p>I'm <strong>Clouddyy</strong>, a graphic designer with two years of experience. I create high-quality Roblox GFX in 2D, cartoony, anime, and 3D styles.</p>
+  </section>
+
+  <section id="work" class="section">
+    <h2>My Work</h2>
+    <div class="gallery">
+      <img src="assets/213.png" alt="GFX 1"/>
+      <img src="assets/dabi_2.png" alt="GFX 2"/>
+      <img src="assets/edit2.png" alt="GFX 3"/>
+      <img src="assets/rengokuv4.png" alt="GFX 4"/>
+      <img src="assets/knight_gfx.png" alt="GFX 5"/>
+      <img src="assets/elemental_tycoon.png" alt="GFX 6"/>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing">
+    <h2>Pricing</h2>
+    <p><strong>Icons:</strong> $10</p>
+    <p><strong>Thumbnails:</strong> $15</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Let's Work Together</h2>
+    <div class="contact-btn">
+      <a href="https://discord.com/users/clouddyyjojo" target="_blank">Contact Me on Discord</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Clouddyy. All rights reserved.
+  </footer>
+</body>
+</html>
